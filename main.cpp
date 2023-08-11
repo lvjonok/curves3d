@@ -18,15 +18,15 @@ std::vector<std::shared_ptr<curves::Curve>> generate_curves() {
     switch (rand() % 3) {
       case 0:
         // generate random circle
-        curves.emplace_back(std::make_shared<curves::Circle>(rand() % 100));
+        curves.emplace_back(std::make_shared<curves::Circle>(double(rand() % 100) + 0.1));
         break;
       case 1:
         // generate random ellipse
-        curves.emplace_back(std::make_shared<curves::Ellipse>(rand() % 100, rand() % 100));
+        curves.emplace_back(std::make_shared<curves::Ellipse>(double(rand() % 100) + 0.1, double(rand() % 100) + 0.1));
         break;
       case 2:
         // generate random helix
-        curves.emplace_back(std::make_shared<curves::Helix>(rand() % 100, rand() % 100));
+        curves.emplace_back(std::make_shared<curves::Helix>(double(rand() % 100) + 0.1, double(rand() % 100) + 0.1));
         break;
     }
   }
