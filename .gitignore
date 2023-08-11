@@ -1,0 +1,63 @@
+# Compiled files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Libraries
+/lib/
+/libs/
+
+# Compiled binaries and built files
+/bin/
+/build/
+
+# IDE specific files and directories
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln
+*.suo
+*.userprefs
+*.cproject
+*.project
+*.settings
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+CMakeInstall.cmake
+CMakeLists.txt.user
+cmake-build-debug/
+
+# Compiled headers
+*.gch
+
+# Generated files by Google Test
+gtest-output/
+gtest-report/
+CMakeTmp/
+
+# macOS specific files
+.DS_Store
+
+# Temporary files and backups
+*~
+.#*
+
+# Visual Studio specific files
+*.sdf
+*.opensdf
+*.sln.docstates
+
+# Windows thumbnail cache
+Thumbs.db
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
