@@ -7,6 +7,6 @@ namespace curves {
   }
 
   Vector3 Helix::derivative(double t) const {
-    return c.derivative(t) + Vector3(0, 0, step);
+    return c.derivative(t) + Vector3(0, 0, step / (2 * M_PI));
   }
 }// namespace curves

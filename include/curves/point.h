@@ -21,6 +21,20 @@ namespace curves {
       return {x - p.x, y - p.y, z - p.z};
     }
 
+    //    getter
+    double X() const {
+      return x;
+    }
+
+    double Y() const {
+      return y;
+    }
+
+    double Z() const {
+      return z;
+    }
+
+
     friend std::ostream &operator<<(std::ostream &os, const Point &p) {
       os << "(" << p.x << ", " << p.y << ", " << p.z << ")";
       return os;

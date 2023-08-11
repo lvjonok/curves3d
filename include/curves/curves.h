@@ -19,7 +19,7 @@ namespace curves {
 
   public:
     explicit Circle(double radius) : radius(radius) {
-      if (radius < 0) {
+      if (radius <= 0) {
         throw std::invalid_argument("Radius must be positive");
       }
     }
@@ -41,7 +41,7 @@ namespace curves {
 
   public:
     Ellipse(double a, double b) : a(a), b(b) {
-      if (a < 0 || b < 0) {
+      if (a <= 0 || b <= 0) {
         throw std::invalid_argument("Semi-axes must be positive");
       }
     }
